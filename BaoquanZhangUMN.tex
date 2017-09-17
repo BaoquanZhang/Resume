@@ -1,0 +1,108 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Professional CV
+% LaTeX Template
+% Version 2.0 (8/5/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Trey Hunner (http://www.treyhunner.com/)
+%
+% Important note:
+% This template requires the resume.cls file to be in the same directory as the
+% .tex file. The resume.cls file provides the resume style used for structuring the
+% document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{resume} % Use the custom resume.cls style
+
+\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.1in]{geometry} % Document margins
+\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+\name{Baoquan Zhang} % Your name
+\address{\textbf{zhan4281@umn.edu  612-212-9868}}
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	TECHNICAL STRENGTHS SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{PROFESSIONAL SKILLS (Looking for Summer Internship 2018)}
+C/C++, Java, Python, MATLAB and etc. \\
+Linux Kernel Development, User-level Application Development\\
+Distributed System Development 
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	Profile SECTION
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Education}
+
+\begin{rSubsection}{Ph.D. Candidate at University of Minnesota -- Twin Cities} {U.S., Sept. 2015 -- Present} {} {}
+\item Computer Science -- Storage Systems, including Cloud Storage, New Devices, Key-Value Store etc.
+\end{rSubsection}
+
+\begin{rSubsection}{M.S. and B.E. at Harbin Engineering University} {China, Sept. 2008 -- April. 2015} {} {}
+\item Computer Science -- Cloud Storage and Distributed Systems (Hadoop, Impala and etc.)
+\end{rSubsection}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Working Experience}
+
+\begin{rSubsection}{Dell EMC, Summer Intern} {Eden Prairie, Minnesota, May.22 2017 -- Aug.11 2017} 
+{Performance improvements of the IO tracing module in OS of storage controllers} {}
+\item Implemented a shared log pool including 40 tracing logs instead of single log in the existing solution.
+\item Realized a trace serialization method serializing outputs of entry retrieval from multiple logs.
+\item Achieved 50\% -- 300\% performance improvements comparing to single-log implementations.
+\end{rSubsection}
+
+\begin{rSubsection}{Tsinghua University, Full-Time Research Assistant}{Beijing, China, May 2013 -- April 2015}
+{Construction of general big data management systems (MySQL + Impala + HDFS)}{}
+\item Constructed a hybrid system combining relational databases with distributed data warehouses.
+\item Realized data migrations between databases and data warehouses based on the data hotness. 
+\end{rSubsection}
+
+\end{rSection}
+
+\begin{rSection}{Research Experience}
+
+\begin{lSubsection}{KVSNVM: A design of Key-Value Store on Non-Volatile Memory (NVM)}
+\item Designed a Key-Value Store on NVM using B Tree as the key index to reduce the retrieval latencies.
+\item Proposed a mechanism combining write-ahead logs with shadow pages to guarantee consistencies.
+\end{lSubsection}
+
+\begin{lSubsection}{Optimizing I/O scheduling in distributed systems for data-intensive computing}
+\item Proposed a method merging the data retrievals with same data set within user-defined time windows.
+\item Realized a mathematical model selecting data replicas based on loads and performances of nodes.
+\end{lSubsection}
+
+\begin{lSubsection}{SmartRAID: RAID 5 with Dynamic Spare Drive on Shingled Magnetic Recordings (SMR)}
+\item Identified performance behaviors of RAID 5 on SMR drives by comprehensive evaluations.
+\item Proposed a RAID 5 design on SMR drives using dynamic spare drive to reduce data updating overheads.
+\end{lSubsection}
+
+\begin{lSubsection}{Improving the end-to-end data integrity in Linux Software RAID}
+\item Designed a new Software RAID in Linux kernel compatible with T10 Protection Information (T10 PI).
+\item Deployed PI buffers in stripe structures, in which PI could be generated, verified and passed.
+\end{lSubsection}
+
+\end{rSection}
+
+\begin{rSection}{miscellaneous}
+ADC Graduate Fellowship, University of Minnesota -- Twin Cities, 2015 -- 2016\\
+National Fellowship of China, Harbin Engineering University, 2014 -- 2015
+\end{rSection}
+
+%	EXAMPLE SECTION
+%----------------------------------------------------------------------------------------
+\end{document}
